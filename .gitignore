@@ -1,4 +1,3 @@
-.idea/*
 *.tar
 *.tar.*
 *.jar
@@ -9,6 +8,7 @@
 *.log
 *.log.*
 *.sig
+.idea/*
 
 pkg/
 src/
