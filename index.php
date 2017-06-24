@@ -17,7 +17,7 @@
             <div class="row">
                 <a href="#" class="navbar-brand"><img src="images/logo.png" alt=""></a>
                 <div class="col-6 col-sm-3">
-                    <h3>Project1.Intexsoft.by</h3>
+                    <h3>Project1.Intexsoft.by!</h3>
                     <span class="data"><?php
        echo date("Y-m-d H:i:s");
        ?></span>
