@@ -108,7 +108,9 @@
         </ul>
     </div>
 
-    <h1>ДОБРО ПОЖАЛОВАТЬ НА ПРОЕКТ</h1>
+            <div class="col-md-10">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur ducimus est expedita ipsam laboriosam nam praesentium qui? Aperiam architecto aspernatur dolorum ex fugit harum magnam minima, natus quaerat sed.
+            </div>
 
     </div>
     </div>
