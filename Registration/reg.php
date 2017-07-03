@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Project1</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" href="js/bootstrap.js"></script>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" href="../js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
         <div class="wrapper">
             <div class="header">
 <div class="row">
-  <a href="#" class="navbar-brand"><img src="images/logo.png" alt=""></a>
+  <a href="#" class="navbar-brand"><img src="../images/logo.png" alt=""></a>
   <div class="col-6 col-sm-3">
    <h3>Project1.Intexsoft.by</h3>
    <span class="data"><?php
@@ -124,23 +124,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label col-xs-3">Дата рождения:</label>
-                    <div class="col-xs-3">
-                        <select class="form-control">
-                            <option>Дата</option>
-                        </select>
-                    </div>
-                    <div class="col-xs-3">
-                        <select class="form-control">
-                            <option>Месяц</option>
-                        </select>
-                    </div>
-                    <div class="col-xs-3">
-                        <select class="form-control">
-                            <option>Год</option>
-                        </select>
-                    </div>
-                </div>
+                  </div>
                 <div class="form-group">
                     <label class="control-label col-xs-3" for="inputEmail">Email:</label>
                     <div class="col-xs-9">
@@ -193,6 +177,13 @@
                 </div>
                 <br />
                 <div class="form-group">
+                    <div class="col-xs-offset-3  col-sx-9">
+                        <p>Загрузите ваши фотографии на сервер</p>
+                        <p><input type="file" name="photo" multiple accept="image/*,image/jpeg">
+                            <input type="submit" value="Отправить"></p>
+                    </div>
+                </div>
+                <div class="form-group">
                     <div class="col-xs-offset-3 col-xs-9">
                         <input type="submit" class="btn btn-primary" value="Регистрация">
                         <input type="reset" class="btn btn-default" value="Очистить форму">
@@ -227,7 +218,7 @@
                         
 
 <script href="js/jquery-3.2.1.min.js"></script>
- 
+
        
 </body>
 </html>
