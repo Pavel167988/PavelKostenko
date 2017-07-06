@@ -20,16 +20,16 @@ class Flat
     }
 
     function deleterooms(){
-            unset($this->arr[1]);
+            unset($this->arr[0]);
             return $this->arr;
 
     }
 
 
-    function status($obj)
+    function status($obj1)
     {
         echo "<pre>";
-        print_r($obj);
+        print_r($obj1);
         echo "<pre/>";
     }
 }

@@ -15,23 +15,23 @@ class Room {
      * @param $lightstatus
      * @param $human
      */
-    public function __construct($windows, $doors, $lightstatus)
+    public function __construct($windows, $doors)
     {
         $this->windows = $windows;
         $this->doors = $doors;
-        $this->lightstatus = $lightstatus;
+
 
     }
 
 
     function lightStatusON()    {
 
-           return $this->lightstatus = 1;
+           return $this->lightstatus = "Свет включен";
 
 
     }
      function lightStatusOFF(){
-              return $this->lightstatus = 0;
+              return $this->lightstatus = "Свет выключен";
 
      }
 
@@ -50,6 +50,7 @@ class Room {
     function deletehuman(){
             if ($this->doors !==0){
                 $this->human--;
+               return $this->lightStatusOFF();
             }
     }
 
