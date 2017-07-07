@@ -3,7 +3,7 @@ class Room {
     public $windows;
     public $doors;
     /**
-     * @var boolean
+     * @var string
      */
     public $lightstatus;
     public $human;
@@ -50,12 +50,19 @@ class Room {
     function deletehuman(){
             if ($this->doors !==0){
                 $this->human--;
-               return $this->lightStatusOFF();
+
             }
     }
 
 
-    function statusroom($obj){
+    function statusroom($obj)
+    {
+        if ($this->human ==0){
+        $this->lightStatusOFF();
+        }
+        else {
+            $this->lightStatusON();
+        }
             echo "<pre>";
             print_r($obj);
             echo "<pre/>";
