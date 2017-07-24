@@ -19,23 +19,23 @@ class Bus {
 
 
 
-    function selectbus ($num ,$route1 , $route2, $route3)
+    function selectbus ($name ,$route1 , $route2, $route3)
     {
-        if ($num == 10) {
-            echo "На автобус №: ".$num." данный мартшрут: ";
+        if ($name == 1) {
+            echo "На автобус №: ".$name." данный мартшрут: ";
             echo "<pre>";
             print_r($route1);
             echo "<pre>";
         }
 
-        elseif ($num == 20) {
-            echo "На автобус №: ".$num." данный мартшрут: ";
+        elseif ($name == 5) {
+            echo "На автобус №: ".$name." данный мартшрут: ";
             echo "<pre>";
             print_r($route2);
             echo "<pre>";
         }
-        elseif ($num == 30){
-            echo "На автобус №: ".$num." данный мартшрут: ";
+        elseif ($name == 6){
+            echo "На автобус №: ".$name." данный мартшрут: ";
             echo "<pre>";
             print_r($route3);
             echo "<pre>";
@@ -66,10 +66,10 @@ class Bus {
 
 
     }
-    function selectStation($num, $route1, $arr , $station)
+    function selectStation($name, $route1, $arr , $station)
     {
-        $key2 = array_search($num, $station);
-        echo "Время приьбытия автобуса на остановку под № ".$num;
+        $key2 = array_search($name, $station);
+        echo "Время прибытия автобуса на остановку: ".$name;
         echo "<pre>";
         print_r(array_slice($arr, $key2, true));
         print_r($route1);
@@ -77,13 +77,13 @@ class Bus {
     }
 
 
-    function selectBus2($num, $arrbus, $route1, $route2, $route3)
+    function selectBus2($name, $arrbus2, $route1, $route2, $route3)
     {
         foreach ($route1 as $elem) {
-            if (($elem == $num) == true) {
+            if (($elem == $name) == true) {
                 echo "Автобус под № :";
                 echo "<pre>";
-                print_r($arrbus[0]);
+                print_r($arrbus2[0]);
                 echo "<pre>";
 
 
@@ -91,10 +91,10 @@ class Bus {
             }
         }
         foreach ($route2 as $elem2) {
-            if (($elem2 == $num) == true) {
+            if (($elem2 == $name) == true) {
                 echo "Автобус под № :";
                 echo "<pre>";
-                print_r($arrbus[1]);
+                print_r($arrbus2[1]);
                 echo "<pre>";
 
 
@@ -102,10 +102,10 @@ class Bus {
             }
         }
         foreach ($route3 as $elem3) {
-            if (($elem3 == $num) == true) {
+            if (($elem3 == $name) == true) {
                 echo "Автобус под № :";
                 echo "<pre>";
-                print_r($arrbus[2]);
+                print_r($arrbus2[2]);
                 echo "<pre>";
 
 
@@ -121,6 +121,11 @@ class Bus {
 
 
 
+            function latlong (){
+
+
+
+            }
 
 
 
